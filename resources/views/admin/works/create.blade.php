@@ -3,12 +3,17 @@
 @section('content')
 
 <div class="container">
-  <form class="mt-3" action="{{ route('admin.works.store') }}" method="POST">
+  <form class="mt-3" action="{{ route('admin.works.store') }}" method="POST" enctype="multipart/form-data">
 
     @csrf
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
       <input type="text" name="title" class="form-control" id="title" placeholder="insert the project title here.." value="{{ old('title') }}">
+    </div>
+
+    <div class="mb-3">
+      <label for="work_image" class="form-label">Work Image</label>
+      <input class="form-control" type="file" name="work_image" id="work_image">
     </div>
     
     <div class="mb-3">
