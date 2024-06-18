@@ -13,7 +13,7 @@
 
     <div class="mb-3">
       <label for="work_image" class="form-label">Work Image</label>
-      <input class="form-control" type="file" name="work_image" id="work_image">
+      <input class="form-controlwork_image_to_" type="file" name="work_image" id="work_image">
     </div>
     
     <div class="mb-3">
