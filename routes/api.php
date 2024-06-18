@@ -27,3 +27,5 @@ Route::get('/test', function(){
 });
 
 Route::get('/works', [WorkController::class, 'index']);
+
+Route::post('/contacts', [LeadController::class, 'store']);
